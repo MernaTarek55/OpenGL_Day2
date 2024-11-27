@@ -102,14 +102,14 @@ void CreateRibbon()
 }
 
 vertex cube_core_vertices[] = {
-	{vec3(-0.5, 0.5, 0.5), vec3(1, 1, 1)},   // Front top-left (White for the belly)
-	{vec3(-0.5, -0.5, 0.5), vec3(1, 1, 1)},  // Front bottom-left (White for the belly)
-	{vec3(0.5, -0.5, 0.5), vec3(1, 1, 1)},   // Front bottom-right (White for the belly)
-	{vec3(0.5, 0.5, 0.5), vec3(1, 1, 1)},    // Front top-right (White for the belly)
-	{vec3(0.5, 0.5, -0.5), vec3(0, 0, 0)},   // Back top-right (Black for the back)
-	{vec3(0.5, -0.5, -0.5), vec3(0, 0, 0)},  // Back bottom-right (Black for the back)
-	{vec3(-0.5, -0.5, -0.5), vec3(0, 0, 0)}, // Back bottom-left (Black for the back)
-	{vec3(-0.5, 0.5, -0.5), vec3(0, 0, 0)}   // Back top-left (Black for the back)
+	{vec3(-0.5, 0.5, 0.5), vec3(1, 1, 1)},   
+	{vec3(-0.5, -0.5, 0.5), vec3(1, 1, 1)}, 
+	{vec3(0.5, -0.5, 0.5), vec3(1, 1, 1)},   
+	{vec3(0.5, 0.5, 0.5), vec3(1, 1, 1)},    
+	{vec3(0.5, 0.5, -0.5), vec3(0, 0, 0)},   
+	{vec3(0.5, -0.5, -0.5), vec3(0, 0, 0)},  
+	{vec3(-0.5, -0.5, -0.5), vec3(0, 0, 0)}, 
+	{vec3(-0.5, 0.5, -0.5), vec3(0, 0, 0)}   
 };
 
 void CreateCube()
@@ -254,7 +254,6 @@ int Init()
 float theta = 0;
 void Update()
 {
-	// add all tick code
 	theta += 0.001f;
 }
 
